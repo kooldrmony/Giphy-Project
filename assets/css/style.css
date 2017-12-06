@@ -1,0 +1,59 @@
+body {
+	background: blue;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	color: white;
+	font-weight: bold;
+	font-size: 69px;
+	margin-bottom: 15px;
+}
+
+.wrapper {
+	margin: 60px 0 60px 60px;
+}
+
+.player-button {
+	color: blue;
+	font-size: 20px;
+	background: orange;
+	padding: 10px 10px;
+	margin: 5px;
+}
+
+#add-player-button {
+	font-size: 20px;
+	color: blue;
+	background: orange;
+	padding: 10px 10px;
+	margin: 5px;
+}
+
+#new-player-input {
+	padding: 10px 10px;
+	font-size: 20px;
+}
+
+#playerbutton-group {
+	margin-right: 25px;
+	margin-bottom: 20px;
+}
+
+.results-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+
+.result-container {
+	margin: 30px 30px 0 0;
+}
+
+p {
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0 0 5px 5px;	
+}
