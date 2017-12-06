@@ -1,3 +1,5 @@
+
+//This array sets the pre-set string options that appear on the screen when it is loaded.
 var topics = [
 	"allen iverson",
 	"michael jordan",
@@ -16,6 +18,9 @@ var topics = [
 
 ];
 
+//This for loop runs through the array one by one and creates the pre-set buttons.
+//Create a new variable named playerbutton which creates a new button via jquery and applys text based on the for loop result and index
+//Add an attribute to the player button as well as a class designator to be able to call it later.
 for(var i = 0; i < topics.length; i++) {
 	var playerbutton = $("<button>").text(topics[i]);
 	playerbutton.attr("data-player", topics[i]);
@@ -23,6 +28,7 @@ for(var i = 0; i < topics.length; i++) {
 	$("#playerbutton-group").append(playerbutton);
 }
 
+//This section creates an on click function which allows the user to click on the "Shoot" button and render an action
 $("#add-player-button").on("click", function(e) {
 	e.preventDefault();
 	var alreadyExist = false;
@@ -40,18 +46,21 @@ $("#add-player-button").on("click", function(e) {
 	$("#new-player-input").val("");
 });
 
+//This section sets up the document on click feature which enables the DOM to respond to when the user interacts by clicking on buttons.
+//Creates a new variables called hooper and queryURL
+//queryURl equals to the url from which we will be pulling information from plus it includes the assigned api key as well as sets the limit of number of giphys to return equal to a limit of 10.
+
 $(document).on("click", ".player-button", function() {
 	var hooper = $(this).attr("data-player");
 	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        hooper + "&api_key=dc6zaTOxFJmzC&limit=10";
+        hooper + "&api_key=r2eQ62susITH5yMEm5a8a4CIJtciMARA&limit=10";
 
+//This section uses the ajax call function to "get" information from the given website.
     $.ajax({
     	url: queryURL,
     	method: "GET"
     }).done(function(response) {
     	var results = response.data;
-    	
-    	console.log(results);
 
 		var resultsContainerSection = $("<section class='results-container'>");
 
