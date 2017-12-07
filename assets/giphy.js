@@ -86,3 +86,5 @@ $(document).on("click", ".player-button", function() {
     	$("#allstar-group").prepend(resultsContainerSection);
     });
 });
+
+//The remaining portion would be to an on click function with the addition of if else statements that would enable the user to click the gif and switch it from still to animate.
