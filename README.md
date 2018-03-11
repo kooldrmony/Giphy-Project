@@ -4,7 +4,7 @@ This project is a giphy related project in which giphies of different NBA greats
 
 ## How to Access the Project
 
-To access the project visit this [link](https://kooldrmony.github.io/Giphy-Project/).
+To access the project visit this [link](https://kooldrmony.github.io/NBA-All-Star-Giphy-App/).
 
 ## Purpose of Project
 
