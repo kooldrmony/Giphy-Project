@@ -1,6 +1,6 @@
 # NBA All-Star Giphy App
 
-This project is a giphy related project in which giphies of different NBA greats are generated. There are preset buttons of different NBA legend and when the user clicks on one it generates 10 different giphys of that player.
+This project is a giphy related project which generates 10 different giphy's of the selected player. There are of different NBA legend and when the user clicks on one it generates 10 different giphys of that player.
 
 ## How to Access the Project
 
